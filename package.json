@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/shajanjp/blackpipe.git"
   },
+  "bin": {
+    "blackpipe": "./index.js"
+  },
   "author": "shajanjp@gmail.com",
   "license": "ISC",
   "bugs": {
