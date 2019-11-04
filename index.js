@@ -1,4 +1,5 @@
-const socket = require('socket.io-client')('http://localhost:3000');
+const HOST = 'https://blackpipe.glitch.me';
+const socket = require('socket.io-client')(HOST);
 let uuid = require('uuid/v4');
 let sessionId = uuid();
 
@@ -18,7 +19,7 @@ function startCapture(){
 
 socket.on('connect', function(){
   console.log('connected');
-  console.log('Visit ', `http://localhost:3000/view/${ sessionId }`);
+  console.log('View : ', `${ HOST }/view/${ sessionId }`);
   startCapture();
 });
 
