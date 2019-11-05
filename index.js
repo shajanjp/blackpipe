@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const HOST = 'https://blackpipe.glitch.me';
 const socket = require('socket.io-client')(HOST);
 let uuid = require('uuid/v4');
