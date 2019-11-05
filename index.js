@@ -23,9 +23,10 @@ function startCapture(){
   });
 }
 
+console.log('connecting...');
+
 socket.on('connect', function(){
-  console.log('connected');
-  console.log('View : ', `${ HOST }/view/${ sessionId }`);
+  console.log('open ', `${ HOST }/view/${ sessionId }`);
   startCapture();
 });
 
