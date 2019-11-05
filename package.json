@@ -21,6 +21,7 @@
   "homepage": "https://github.com/shajanjp/blackpipe#readme",
   "dependencies": {
     "socket.io-client": "^2.3.0",
-    "uuid": "^3.3.3"
+    "uuid": "^3.3.3",
+    "yargs": "^14.2.0"
   }
 }
