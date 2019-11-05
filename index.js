@@ -1,8 +1,13 @@
 #!/usr/bin/env node
+const argv = require('yargs').argv
 const HOST = 'https://blackpipe.glitch.me';
 const socket = require('socket.io-client')(HOST);
 let uuid = require('uuid/v4');
 let sessionId = uuid();
+ 
+if (argv.session) {
+  sessionId = argv.session;
+}
 
 function startCapture(){
   process.stdin.resume();
