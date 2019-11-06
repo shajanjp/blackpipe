@@ -14,6 +14,9 @@ function startCapture(){
   process.stdin.setEncoding('utf8');
 
   process.stdin.on('data', function(chunk) {
+    if(argv.o){
+      process.stdout.write(chunk);
+    }
     socket.emit('PROCESS_OUT', { chunk, sessionId })
   });
 

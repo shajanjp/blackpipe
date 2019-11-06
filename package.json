@@ -1,6 +1,6 @@
 {
   "name": "blackpipe",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Exposing stdout securely with ease.",
   "main": "index.js",
   "scripts": {
