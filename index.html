@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BlackPipe</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav id="main-menu">
+		<div class="ui container">
+			<div class="ui secondary menu">
+				<a class="active item">
+					BlackPipe
+				</a>
+				<div class="right menu">
+					<a class="item" href="#blackpipe-installation">Docs</a>
+					<a class="item" href="http://github.com/shajanjp/blackpipe">Contribute</a>
+					<a class="item" href="http://github.com/shajanjp/blackpipe/issues">Report Issues</a>
+					<!-- <a class="item" href="">FAQ</a> -->
+					<a class="item" href="#blackpipe-installation">About</a>
+				</div>
+			</div><!-- menu -->
+		</div>
+	</nav>
+
+	<header>			
+		<div class="ui container">
+			<div class="ui stackable grid">
+				<div class="six wide column">
+					<img class="ui fluid image" src="img/blackpipe-example.png" alt="">
+				</div>
+				<div class="ten wide column">
+					<h1 id="main-title">BlackPipe</h1>
+					<p class="description">BlackPipe is a simple tool to expose realtime terminal outputs without sacrificing security. </p>
+					<a href="#blackpipe-installation" class="ui button">Install</a>
+					<a href="#blackpipe-installation" class="ui faded button" href="https://www.npmjs.com/package/blackpipe" target="_black">View npm package</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+<!-- 	<section id="about">
+		<div class="ui container">
+			<h3 class="ui header">Everything you need for your API in seconds!</h3>
+			Yeah, blackpipe usually takes only less than a second to get things done. Generating REST API for your dream application has never been this easy. blackpipe generates everything from basic route, controller, schema and even swagger docs!
+		</div>
+	</section> -->
+
+	<section id="get-started">
+		<div class="ui container">
+			<div class="ui stackable grid">
+				<div class="twelve wide column">
+					<h4 id="blackpipe-installation">Installation</h4>
+					<p>It is better to install blackpipe globally, so that you can use it from anywhere.</p>
+					<span class="command">npm install blackpipe -g</span>
+
+					<h4 id="blackpipe-usage">Usage</h4>
+					<p>Piping outputs to blackpipe is easy. You can use the same bash syntax that you are familiar with. <br> That's easy as this.</p>
+					<span class="command">ping localhost | blackpipe</span>
+					<br>
+					<br>
+					
+					<p>Theres no limitation on what command's output you are piping to blackpipe. BlackPipe works with pretty much any command line tool that generates an output.</p>
+
+					<h4 id="blackpipe-custom-session">Custom session</h4>
+					<p>
+						BlackPipe uses sockets to stream data to the web page. By default, it uses a server hosted at <a href="https://blackpipe.glitch.me/" target="_blank">https://blackpipe.glitch.me/</a>.
+						BlackPipe allows you to pre define the session name using <span class="term">--session</span> params.
+					</p>
+					<span class="command">nc -zv 192.168.10.121 1-1023 | blackpipe --session "mysession"</span>
+
+					<h4 id="blackpipe-parallel-output">Parallel Output</h4>
+					<p>If you want to output things to the stdout same time, use <span class="term">-o</span> switch.</p>
+					<span class="command">tree | blackpipe -o</span>
+
+					<h4 id="blackpipe-self-hosted-server">Self hosted server</h4>
+					<p>You can setup a blackpipe server your own if you want to. The source for blackpipe-server is available at <a href="https://github.com/shajanjp/blackpipe-server">github</a>.
+					To use your own server, use <span class="term">--host</span> params to override default server.</p>
+					<span class="command">tracepath google.com | blackfire --host "https://mydomain.com/blackpipe-server</span>
+
+					<h4 id="blackpipe-common-use-cases">Common use cases</h4>
+					<span class="command">pm2 logs | blackpipe</span> <br>
+					<span class="command">tail -f /var/log/nginx/domain.access.log | blackpipe</span> <br>
+					<span class="command">npm build | blackpipe</span>
+
+				</div> <!-- twelve column -->
+
+				<div class="four wide column">
+					<div class="ui vertical text menu">
+						<div class="header item">Contents</div>
+						<a class="item" href="#blackpipe-installation">
+							Installation
+						</a>
+						<a class="item" href="#blackpipe-usage">
+							Usage
+						</a>
+						<a class="item" href="#blackpipe-custom-session">
+							Custom session
+						</a>
+						<a class="item" href="#blackpipe-parallel-output">
+							Parallel Output
+						</a>
+						<a class="item" href="#blackpipe-self-hosted-server">
+							Self hosted server
+						</a>
+						<a class="item" href="#blackpipe-common-use-cases">
+							Common use cases
+						</a>
+					</div>
+				</div> <!-- four column -->
+
+			</div> <!-- grid -->
+		</div> <!-- container -->
+	</section>
+
+<!-- 	<section id="faq">
+
+	</section> -->
+
+	<footer>
+
+	</footer>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88928746-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-88928746-1');
+	</script>
+</body>
+</html>

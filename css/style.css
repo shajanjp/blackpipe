@@ -1,0 +1,75 @@
+body{
+	font-family: 'Ubuntu Mono', monospace !important;
+} 
+
+#main-menu{
+	background-color: #1f7047;
+	padding: 20px 0px;
+}
+
+#main-menu .menu .item{
+	color: #fff;
+}
+
+.command{
+	margin-top: 5px;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px;
+	background-color: #DDD;
+}
+
+header{
+	padding: 30px 0px;
+	background-color: #29965f;
+	color: #FFF;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Ubuntu Mono', monospace !important;	
+}
+
+h4{
+	font-size: 1em;
+	margin-bottom: 6px;
+}
+
+h1#main-title{
+	color: #FFF;
+	margin-top: 10px;
+}
+
+section{
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+header .description{
+	font-size: 1.3em;
+}
+
+header .ui.button{
+	border-radius: 0px;
+	border: 1px solid #FFF;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+}
+
+header .ui.faded.button{
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+header .ui.button:hover{
+	border: 1px solid #FFF;
+	background-color: rgba(255, 255, 255, 0.6);
+	color: white;
+}
+
+section#get-started{
+	margin-top: 20px;
+}
+
+span.term{
+	color: #29965f;
+}
