@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 const argv = require('yargs').argv
-const HOST = 'https://blackpipe.glitch.me';
+const HOST = 'http://localhost:3000';
 const socket = require('socket.io-client')(HOST);
-let uuid = require('uuid/v4');
+const { v4: uuid } = require('uuid');
 let sessionId = uuid();
  
 if (argv.session) {
@@ -17,6 +17,7 @@ function startCapture(){
     if(argv.o){
       process.stdout.write(chunk);
     }
+
     socket.emit('PROCESS_OUT', { chunk, sessionId })
   });
 
